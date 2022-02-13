@@ -1,0 +1,87 @@
+/* importing Google fonts: Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+nav .nav-opts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.underline {
+  text-decoration: underline blue;
+}
+
+.underline-wavy {
+  text-decoration: wavy underline blue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.main-head {
+  font-size: xx-large;
+}
+
+.main-desc {
+  width: 30rem;
+  text-align: center;
+}
+
+.btn {
+  background: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+  border: none;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn-secondary {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.btn-lg {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  min-height: 50px;
+  margin-top: 5rem;
+  font-weight: bolder;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+  .main-desc {
+    width: 15rem;
+  }
+}
