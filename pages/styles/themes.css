@@ -1,0 +1,94 @@
+.theme-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.center-hv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-content {
+  width: 15rem;
+}
+
+.card-img {
+  border-radius: 0.5rem;
+}
+
+/* Modal */
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  text-align: center;
+}
+
+.modal-body {
+  background-color: var(--color-bgmodal);
+
+  color: var(--color-fgmodal);
+  /* border: 1px solid black; */
+  border-radius: 0.3rem;
+  padding: 2rem;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalBtn {
+  margin: 1rem;
+}
+
+.modal-body a {
+  text-decoration: none;
+}
+
+.model-text-left {
+  text-align: left;
+}
+
+.show-modal {
+  display: none;
+}
+
+.btn-block {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 750px) {
+  .btn-block {
+    flex-direction: column;
+  }
+  .modal-body h2 {
+    font-size: medium;
+  }
+  .model-text-left > * {
+    font-size: small;
+  }
+}

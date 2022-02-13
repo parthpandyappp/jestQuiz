@@ -1,0 +1,11 @@
+.result-gap {
+  margin-top: 3rem;
+}
+
+.result-correct {
+  background-color: green !important;
+}
+
+.result-incorrect {
+  background-color: red !important;
+}
