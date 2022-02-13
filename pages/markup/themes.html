@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>Explore Quizzes</title>
+  </head>
+  <body>
+    <nav>
+      <h1>
+        <a href="../../index.html" class="underline-wavy">jestQuiz</a>
+      </h1>
+      <div class="nav-opts">
+        <p class="underline">Terms</p>
+        <p class="underline">About Us</p>
+      </div>
+    </nav>
+    <div class="center-hv">
+      <h1>Themes</h1>
+      <div class="theme-container">
+        <div class="card">
+          <img class="card-img" src="https://picsum.photos/250" alt="" />
+          <div class="card-content">
+            <h4>knowledgeBuzz</h4>
+            <p>
+              Wingardium Leviousa your way to the quiz that tests your knowledge
+              on the wizarding world!
+            </p>
+            <button class="btn btn-primary modalBtn">Start now</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img" src="https://picsum.photos/250" alt="" />
+          <div class="card-content">
+            <h4>Bizziare</h4>
+            <p>
+              Wingardium Leviousa your way to the quiz that tests your knowledge
+              on the wizarding world!
+            </p>
+            <button class="btn btn-primary modalBtn">Start now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="show-modal modal" id="modal">
+      <div class="modal-body">
+        <h2>You must abide by some rules prescribed below</h2>
+        <div class="model-text-left">
+          <p>1. Quiz can only be attempted once</p>
+          <p>2. You cannot revert back before completing the entire quiz.</p>
+          <p>
+            3. If any malpractice is noticed, you'll be banned from our servers.
+          </p>
+        </div>
+
+        <div class="btn-block">
+          <button class="btn btn-primary">
+            <a href="./quest.html"> Start the quiz?</a>
+          </button>
+          <button class="btn result-incorrect" id="closeModal">Go Back</button>
+        </div>
+      </div>
+    </div>
+    <footer>Developed By Parth</footer>
+    <script>
+      const modal = document.getElementById("modal");
+      const modalBtn = document.querySelectorAll(".modalBtn");
+      const closeBtn = document.getElementById("closeModal");
+
+      modalBtn.forEach((item) => {
+        item.addEventListener("click", function () {
+          modal.classList.toggle("show-modal");
+        });
+      });
+
+      closeBtn.addEventListener("click", function () {
+        modal.classList.toggle("show-modal");
+      });
+    </script>
+  </body>
+</html>
