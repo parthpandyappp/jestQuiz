@@ -1,0 +1,32 @@
+.quest-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.quest-pills {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.quest-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+@media screen and (max-width: 750px) {
+  .quest-container,
+  .quest-opts,
+  .quest-pills {
+    width: 15rem;
+  }
+}
