@@ -37,6 +37,13 @@ nav {
   height: 60vh;
 }
 
+.center-hv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-head {
   font-size: xx-large;
 }
