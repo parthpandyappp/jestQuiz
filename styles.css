@@ -1,8 +1,13 @@
 /* importing Google fonts: Montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
+
+/* importing styles from quest.css */
+@import url("./pages/styles/quest.css");
+
 /* importing themes.css */
 @import url("./pages/styles/themes.css");
+
 
 * {
   font-family: "Montserrat", sans-serif;
