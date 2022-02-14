@@ -1,6 +1,7 @@
 /* importing Google fonts: Montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
+
 /* importing stylesheet result.css  */
 @import url("./pages/styles/result.css");
 
@@ -10,8 +11,17 @@
 /* importing stylesheet quest.css */
 @import url("./pages/styles/quest.css");
 
+/* importing styles from quest.css */
+@import url("./pages/styles/quest.css");
+
+/* importing themes.css */
+@import url("./pages/styles/themes.css");
+
+
 * {
   font-family: "Montserrat", sans-serif;
+  --color-fgmodal: #111827;
+  --color-bgmodal: #e2e8f0;
 }
 
 body {
