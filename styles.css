@@ -2,6 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 
+/* importing stylesheet result.css  */
+@import url("./pages/styles/result.css");
+
+/* importing stylesheet themes.css  */
+@import url("./pages/styles/themes.css");
+
+/* importing stylesheet quest.css */
+@import url("./pages/styles/quest.css");
+
 /* importing styles from quest.css */
 @import url("./pages/styles/quest.css");
 
